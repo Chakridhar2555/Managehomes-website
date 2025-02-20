@@ -206,11 +206,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
-  )
-}
 
-{/* Services Section */}
+      {/* Services Section */}
       <section className="bg-white py-16 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -252,3 +249,6 @@ export default function Home() {
           </div>
         </div>
       </section>
+    </div>
+  )
+}
