@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] w-full">
         <Image
-          src="/hero-condo.jpg"
+          src="/images/hero-condo.jpg"
           alt="Luxury condo with city view at sunset"
           fill
           className="object-cover"
@@ -143,7 +143,7 @@ export default function Home() {
             <Link href="/home-worth" className="relative group overflow-hidden rounded-xl">
               <div className="relative h-[200px]">
                 <Image
-                  src="/home-worth.jpg"
+                  src="/images/home-worth.jpg"
                   alt="Home Worth"
                   fill
                   className="object-cover transition-transform group-hover:scale-110"
@@ -159,7 +159,7 @@ export default function Home() {
             <Link href="/neighbourhood-alerts" className="relative group overflow-hidden rounded-xl">
               <div className="relative h-[200px]">
                 <Image
-                  src="/neighbourhood.jpg"
+                  src="/images/neighbourhood.jpg"
                   alt="Neighbourhood Alerts"
                   fill
                   className="object-cover transition-transform group-hover:scale-110"
@@ -175,7 +175,7 @@ export default function Home() {
             <Link href="/new-listing-alerts" className="relative group overflow-hidden rounded-xl">
               <div className="relative h-[200px]">
                 <Image
-                  src="/new-listing.jpg"
+                  src="/images/new-listing.jpg"
                   alt="New Listing Alerts"
                   fill
                   className="object-cover transition-transform group-hover:scale-110"
@@ -191,7 +191,7 @@ export default function Home() {
             <Link href="/map-search" className="relative group overflow-hidden rounded-xl">
               <div className="relative h-[200px]">
                 <Image
-                  src="/map-search.jpg"
+                  src="/images/map-search.jpg"
                   alt="Map Search"
                   fill
                   className="object-cover transition-transform group-hover:scale-110"
