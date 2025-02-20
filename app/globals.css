@@ -92,3 +92,22 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom scrollbar styling */
+.overflow-x-auto {
+  scrollbar-width: thin;
+  scrollbar-color: #e2e8f0 #ffffff;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  border-radius: 6px;
+}

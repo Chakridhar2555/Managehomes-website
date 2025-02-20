@@ -207,6 +207,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Reviews Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-sm uppercase tracking-wider text-gray-500 mb-2">REVIEWS</h2>
+            <h3 className="text-3xl font-bold">What our clients have to say!</h3>
+          </div>
+
+          <div className="overflow-x-auto pb-4">
+            <div className="flex gap-6 min-w-max">
+              {/* Review 1 */}
+              <div className="w-[800px] bg-white p-8 rounded-xl shadow-sm">
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex-1">
+                    <Image
+                      src="/images/review-house.jpg"
+                      alt="Modern house review"
+                      width={800}
+                      height={500}
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center">
+                    <div className="text-[80px] text-gray-200 leading-none font-serif">"</div>
+                    <blockquote className="text-gray-700 text-lg -mt-8">
+                      Sailaja and Naveen were very helpful in finding a house for us and we had very good experience working with them. Thank you for all the help and support. I would definitely recommend them!!
+                    </blockquote>
+                    <footer className="text-gray-600 font-medium mt-4">
+                      - Mounica Maddula
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 2 */}
+              <div className="w-[800px] bg-white p-8 rounded-xl shadow-sm">
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex-1">
+                    <Image
+                      src="/images/condo-building.jpg"
+                      alt="Condo review"
+                      width={800}
+                      height={500}
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center">
+                    <div className="text-[80px] text-gray-200 leading-none font-serif">"</div>
+                    <blockquote className="text-gray-700 text-lg -mt-8">
+                      I recently had the pleasure of working with Veena from Get Home Realty. As a first-time homebuyer, the process seemed overwhelming, but Veena guided me through every step with professionalism and expertise...
+                    </blockquote>
+                    <footer className="text-gray-600 font-medium mt-4">
+                      - saravanan j
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 3 */}
+              <div className="w-[800px] bg-white p-8 rounded-xl shadow-sm">
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex-1">
+                    <Image
+                      src="/images/modern-house.jpg"
+                      alt="Modern house review"
+                      width={800}
+                      height={500}
+                      className="rounded-lg object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center">
+                    <div className="text-[80px] text-gray-200 leading-none font-serif">"</div>
+                    <blockquote className="text-gray-700 text-lg -mt-8">
+                      Outstanding service! The team went above and beyond to help us find our perfect home. Their knowledge of the market and negotiation skills were invaluable...
+                    </blockquote>
+                    <footer className="text-gray-600 font-medium mt-4">
+                      - John Smith
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/reviews" className="inline-flex items-center text-red-600 hover:text-red-700">
+              <span className="text-xl mr-1">+</span> Submit Your Reviews
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="bg-white py-16 px-4">
         <div className="container mx-auto">
