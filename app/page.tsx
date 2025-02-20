@@ -247,7 +247,7 @@ export default function Home() {
                   <div className="flex-1">
                     <Image
                       src="/images/condo-building.jpg"
-                      alt="Condo review"
+                      alt="Condo building review"
                       width={800}
                       height={500}
                       className="rounded-lg object-cover w-full h-full"
