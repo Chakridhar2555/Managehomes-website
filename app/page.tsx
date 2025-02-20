@@ -6,7 +6,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import heroImage from '../src/hero-condo.jpg'
 
 export default function Home() {
   const featuredImages = [
@@ -53,7 +52,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] w-full">
         <Image
-          src={heroImage}
+          src="/hero-condo.jpg"
           alt="Luxury condo with city view at sunset"
           fill
           className="object-cover"
@@ -133,7 +132,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
+      
+      {/* Quick Links Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="container mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-3xl font-bold">Quick Links</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <Link href="/home-worth" className="relative group overflow-hidden rounded-xl">
+              <div className="relative h-[200px]">
+                <Image
+                  src="/home-worth.jpg"
+                  alt="Home Worth"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center">
+                    HOME WORTH
+                  </h3>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/neighbourhood-alerts" className="relative group overflow-hidden rounded-xl">
+              <div className="relative h-[200px]">
+                <Image
+                  src="/neighbourhood.jpg"
+                  alt="Neighbourhood Alerts"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center">
+                    NEIGHBOURHOOD ALERTS
+                  </h3>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/new-listing-alerts" className="relative group overflow-hidden rounded-xl">
+              <div className="relative h-[200px]">
+                <Image
+                  src="/new-listing.jpg"
+                  alt="New Listing Alerts"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center">
+                    NEW LISTING ALERTS
+                  </h3>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/map-search" className="relative group overflow-hidden rounded-xl">
+              <div className="relative h-[200px]">
+                <Image
+                  src="/map-search.jpg"
+                  alt="Map Search"
+                  fill
+                  className="object-cover transition-transform group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center">
+                    MAP SEARCH
+                  </h3>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+{/* Services Section */}
       <section className="bg-white py-16 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -175,7 +252,3 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
-  )
-}
-
